@@ -1,0 +1,173 @@
+
+body {
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    font-weight: 200;
+    background-color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+header {
+    background: none;
+}
+
+header::after {
+    content:""; /*I don't remember what goes here "",
+    but i know I have to keep it. When I removed it,
+    the logo and menu stayed, but the area around it was gone.*/
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    width: 50%;
+    margin: 5px 20px;
+}
+
+nav {
+  float: right; 
+  margin-right: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+/*  display: flex;
+    justify-content: space-around;*/
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px; /* probably don't need this...meant for animation */
+    position: relative;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+nav a:hover {
+    color: #ac219a;
+    font-weight: bold;
+}
+
+#showcase {
+    width: 100vw; /* vw = Viewport Width */
+    min-height: 600px;
+    margin: 0 auto; /* Center the Container, needs width property to work */
+    
+    /* Adding a background image to this container */
+    background-image: url("../images/TSG18_c1-sm-55.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#showcase h2 {
+    margin-top: 50px;
+/*    font-size: 45px;*/
+    font-family: serif;
+    font-weight: lighter;
+    font-size: 4em;    
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase p {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #8e197e;
+}
+
+
+/* ===== ABOUT ==== */   
+
+#main {
+    width: 100vw;
+    background: #fff8e1;
+    height: 600px;
+}
+
+#main .container {
+    width: 60vw;
+}
+
+#main .page-title {
+    color: #8e197e
+}
+
+#main .name {
+    font-weight: bold;
+    font-size: medium;
+    color: #8e197e
+}
+
+/* ===== GALLERY ==== */   
+
+#main .page-title {
+    color: #8e197e
+}
+
+#main div.gallery {
+  margin: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+}
+
+#main div.gallery:hover {
+  border: 1px solid #777;
+}
+
+#main div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+#main div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.desc {
+    font-family: san-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #8e197e;
+}
+
+/* ===== FOOTER ==== */   
+
+footer {
+    padding: 5px;
+    margin-top: 0px;
+    color: #ffffff;
+    background-color: #78166b;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+}
+
+p.space {
+    letter-spacing: 1.5px;
+}
